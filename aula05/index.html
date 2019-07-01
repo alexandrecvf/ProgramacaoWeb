@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 05</title>
+	<meta charset="utf-8">
+	<style>
+		textarea{
+			resize: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="destino.php" method="POST/GET"> <!-- Método GET ou POST -->
+		<fieldset>
+			<legend>Informações Pessoais</legend>
+			<p>Nome: <input type="text" size="100" name="nome"> </p>
+			<label for="email">Email: <input type="text" size="100" id="email" name="email"></label> <br><br>
+			<label for="senha">Senha: <input type="password" name="senha" id="senha" size="100"></label> <br><br>
+		</fieldset>
+		<br>
+		<label for="carros"> Seleciona: </label>
+		<select name="carros" id="carros">
+			<option>Volvo</option>
+			<option>Uno</option>
+			<option>Monza</option>
+			<option>Kombi</option>
+			<option>Fusca</option>
+			<option>Brasília</option>
+		</select><br><br>
+
+		<textarea name="mensagem" rows="4" cols="100" placeholder="Digite aqui..."></textarea><br><br>
+
+		<label for="professor">
+			Professor <input type="checkbox" name="profissao" id="professor">
+		</label>
+		<label for = "dentista">
+			Dentista <input type="checkbox" name="profissao" id="dentista">
+		</label>
+		<label for = "motorista">
+			Motorista <input type="checkbox" name="profissao" id="motorista">
+		</label> <br><br>
+
+		<label for="professor2">
+			Professor <input type="radio" name="profissao" id="professor2">
+		</label>
+		<label for = "dentista2">
+			Dentista <input type="radio" name="profissao" id="dentista2">
+		</label>
+		<label for = "motorista2">
+			Motorista <input type="radio" name="profissao" id="motorista2">
+		</label><br><br>
+
+		<input type="date"><br><br>
+		
+		<input class="n" type="number"><br><br>
+
+		<input type="range" value="0"><br><br>
+
+		<input type="color"><br><br>
+
+		<input type="email"><br><br>
+
+		<input type="submit" name="enviar" value="Enviar">
+
+		<input type="reset" name="reset" value="Limpar">
+
+
+		
+	</form>
+</body>
+</html>

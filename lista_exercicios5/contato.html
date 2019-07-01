@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Paul McCartney</title>
+
+		<style>
+			.grid-container{
+				font-family: arial;
+				display: grid;
+				grid-template-columns: 20% auto auto auto;
+				padding: 10px;
+				grid-row-gap: 10px;
+				grid-column-gap: 30px;
+			}
+			.grid-item-1{
+				grid-row: 1 / 5;
+				height: 300px;
+				background-color: #e2e2e2;
+				border-radius: 5px;
+			}
+			.grid-item-2{
+				color: white;
+				grid-column: 2 / 5;
+				padding-top: 25px;
+				padding-left: 50px;
+				padding-right: 50px;
+				padding-bottom: 25px;
+				background-color: #383838;
+				border-radius: 5px;
+				text-align: justify;
+				text-align: center;
+			}
+			.link{
+				margin: 0px;
+				color: blue;
+				padding-left: 20px;
+				padding-bottom: 10px;
+			}
+
+			.link:hover{
+				background-color: blue;
+				color: white;
+			}
+
+			.Sidebar{
+				padding-left: 20px;
+				color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="grid-item-1">
+				<p class="Sidebar">MENU</p>
+				<p class="link"><a href="exercicio05.html">The Beatles</a></p>
+				<p class="link"><a href="paulmccartney.html">Paul McCartney</a></p>
+				<p class="link"><a href="lindamccartney.html">Linda McCartney</a> </p>
+				<p class="link"><a href="johnlennon.html">John Lennon</a> </p>
+				<p class="link"><a href="yokoono.html">Yoko Ono</a> </p>
+				<p class="link"><a href="george.html">George Harrison</a> </p>
+				<p class="link"><a href="ringo.html">Ringo Starr</a> </p>
+				<p class="link"><a href="contato.html">Entre em Contato</a> </p>
+			</div>
+			
+			<form action="destino.php" method="POST/GET">
+				<div class="grid-item-2">
+					<h2>Contato</h2>
+					<input type="text" size="52" id="nome" name="nome" placeholder="Nome Completo" class="campos"> <br><br>
+					<input type="text" size="52" id="email" name="email" placeholder="Email" class="campos"> <br><br>
+					<input type="text" size="52" id="endereco" name="endereco" placeholder="Endereço" class="campos"> <br><br>
+					<textarea name="mensagem" rows="4" cols="39" placeholder="Mensagem" class="campoArea"></textarea><br><br>
+					<label><input type="checkbox" name="copyEmail" id="copyEmail"> Me envie uma copia para o meu email</label>
+					<br><br>
+					<input type="submit" name="enviar" value="SEND" class="botao">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

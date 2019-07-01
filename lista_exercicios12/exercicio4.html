@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Lista 12 - Número 4</title>
+    <style>
+        body {
+            background-color: beige;
+            text-align: center;
+            width: 40%;
+            margin: 0 auto;
+            padding: 20px 20px;
+        }
+        .lastResult{
+            padding: 3px;
+        }
+        input {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adivinhe o número!</h1>
+    <p>Adivinhe o número aleatório entre 1 e 100.</p>
+    <div class="form" id="div1">
+        <label for="guessField"></label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Enviar" class="guessSubmit" onclick="jogar()">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        var guesses = document.querySelector(".guesses");
+        var lastResult = document.querySelector(".lastResult");
+        var lowOrHi = document.querySelector(".lowOrHi");
+        var guessSubmit = document.querySelector(".guessSubmit");
+        var guessField = document.querySelector(".guessField");
+        var guessCount = 1;
+        var resetButton;
+
+        function checkGuess() {
+            var userGuess = Number(guessField.value);
+            if (userGuess === randomNumber) {
+                lastResult.textContent = "Seu número está certo!";
+                lowOrHi.textContent = "";
+
+            } else if (guessCount === 6) {
+                lastResult.textContent = "Acabaram suas tentativas, fim de jogo!";
+                lowOrHi.textContent = "";
+
+            } else {
+                lastResult.textContent = "Errado!";
+                if (guessCount === 5){
+                    lastResult.textContent = "Acabaram suas tentativas, fim de jogo!";
+                    lowOrHi.textContent = "";
+                }
+                if (userGuess < randomNumber) {
+                    var paragrafo = document.createElement("li"); //criando um elemento tipo p
+
+                    var texto = document.createTextNode(
+                        userGuess + " é muito baixo"
+                    ); //adiciona um conteúdo ao elemento criado
+
+                    paragrafo.appendChild(texto); //conecta o conteúdo ao elemento
+
+                    var div1 = document.getElementById("div1");
+                    div1.appendChild(paragrafo); //conecta o elemento a um elemento pai na ultima posição
+                } else if (userGuess > randomNumber) {
+                    var paragrafo = document.createElement("li"); //criando um elemento tipo p
+
+                    var texto = document.createTextNode(
+                        userGuess + " é muito alto"
+                    ); //adiciona um conteúdo ao elemento criado
+
+                    paragrafo.appendChild(texto); //conecta o conteúdo ao elemento
+
+                    var div1 = document.getElementById("div1");
+                    div1.appendChild(paragrafo); //conecta o elemento a um elemento pai na ultima posição
+                }
+            }
+
+            guessCount++;
+            guessField.value = "";
+        }
+        guessSubmit.addEventListener("click", checkGuess);
+    </script>
+</body>
+
+</html>

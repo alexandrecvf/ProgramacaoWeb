@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 02 - Tabelas</title>
+	<style>
+		table{
+			/*margin: 10px;*/
+			width: 100%;
+		}
+		table, td, th{
+			border: 1px solid black; /*dotted, dashed, solid, double, ridge, inset, outset, none, hidden*/
+			border-collapse: collapse;
+			/*border-style: dotted dashed solid double*/
+		}
+		td{
+			text-align: center;
+			padding: 20px;
+		}
+		tr:nth-child(odd){ /*odd ímpar, even par*/
+			background-color: gray;
+		}
+		tr:nth-child(even){ /*odd ímpar, even par*/
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tabelas em HTML</h1>
+
+	<!--th é o cabeçalho, tr é as linhas-->
+        <table>
+            <tr>
+         <th>Empresas</th>
+         <th>Setor</th>
+         <th colspan="2">Cidade</th>
+            </tr>
+            <tr>
+               <td>Nestlé</td>
+               <td>Alimentício</td>
+               <td>Ituiutaba</td> 
+               <td>Uberaba</td>
+            </tr>
+            <tr>
+                <td>Algar</td>
+                <td>Comunicações</td>
+                <td>Uberlândia</td>
+                <td>Araxá</td>
+            </tr>
+            <tr>
+                <td>Coca-Cola</td>
+                <td>Bebidas</td>
+                <td>New York</td>
+                <td>Paris</td>
+            </tr>
+        </table>
+
+</body>
+</html>

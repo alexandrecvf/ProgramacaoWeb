@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio 03</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+        <style>
+            .grid-container{
+                display: grid;
+                grid-template-columns: 300px auto;
+                padding: 10px;
+                grid-row-gap: 10px;
+                grid-column-gap: 30px;
+                font-family: arial;
+            }
+            .grid-container > div{
+                border-radius: 5px;
+            }
+            .grid-item-1{
+                grid-column: 1/3;
+                height: 50px;
+                background-color: #141414;
+            }
+            .inside-grid-1-1{
+                margin: 0;
+                padding: 0;
+                width: 100px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-2{
+                margin: 0;
+                padding: 0;
+                width: 100px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-2:hover{
+                background-color: black;
+            }
+            .inside-grid-1-3{
+                margin: 0;
+                padding: 0;
+                width: 150px;
+                height: 50px;
+                float: left;
+                padding-left: 5px;
+            }
+            .inside-grid-1-3:hover{
+                background-color: black;
+            }
+            .inside-grid-1-4{
+                margin: 0;
+                padding: 0;
+                width: 55px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-4:hover{
+                background-color: black;
+            }
+            .inside-grid-1-5{
+                margin: 0;
+                padding: 0;
+                width: 55px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-5:hover{
+                background-color: black;
+            }
+            .inside-grid-1-6{
+                margin-top: 10px;
+                margin-left: 15px;
+                padding: 0;
+                width: 200px;
+                height: 30px;
+                float: left;
+                border-radius: 50px;
+                background-color: gray;
+            }
+            .inside-grid-1-7{
+                margin: 0;
+                padding: 0;
+                width: 450px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-8{
+                margin: 0;
+                padding: 0;
+                width: 100px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-8:hover{
+                background-color: black;
+            }
+            .inside-grid-1-9{
+                margin: 0;
+                padding: 0;
+                width: 80px;
+                height: 50px;
+                float: left;
+            }
+            .inside-grid-1-9:hover{
+                background-color: black;
+            }
+            p.menu{
+                color: #707070;
+                font-size: 13pt;
+                padding-left: 7px;
+            }
+            .grid-item-2{
+                background-color: aqua;
+                background-color: lightgray;
+                height: 450px;
+            }
+            .grid-item-3{
+                grid-column: 2/3;
+                height: 700px;
+            }
+            .welcome{
+                background-color: lightgray;
+                padding-left: 40px;
+                padding-top: 30px;
+                height: 240px;
+            }
+            .projetos{
+                margin-top: 30px;
+                height: 80px;
+                background-color: red;
+            }
+            .proj{
+                float: left;
+                width: 265px;
+                height: 80px;
+                background-color: lightgray;
+                padding-left: 15px;
+            }
+            .task{
+                float: left;
+                width: 212px;
+                height: 80px;
+                background-color: lightgray;
+            }
+            .message{
+                float: left;
+                width: 280px;
+                height: 80px;
+                background-color: lightgray;
+            }
+            .files{
+                float: left;
+                width: 211px;
+                height: 80px;
+                background-color: lightgray;
+            }
+            .recent{
+                margin-top: 20px;
+                height: 300px;
+            }
+            .link{
+                color: blue;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                margin: 0;
+            }
+            p.link:hover {
+                background-color: blue;
+                color: white
+            }
+            .sidebar{
+                padding-left: 10px;
+                margin-bottom: 10px;
+                color: gray;
+            }
+            .botao{
+                background-color: blue;
+                color: white;
+                border-radius: 10px;
+                border: 1px solid blue;
+                padding: 12px;
+                font-size: 12pt;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class = "grid-item-1">
+                <div class = "inside-grid-1-1">
+                    <h2 style="color: white; margin: 0; padding-left: 19px; padding-top: 12px;">Akira</h4>
+                </div>
+                <div class = "inside-grid-1-2">
+                    <p class="menu">Dashboard</p>
+                </div>
+                <div class = "inside-grid-1-3">
+                    <p class="menu">Account Settings</p>
+                </div>
+                <div class = "inside-grid-1-4">
+                    <p class="menu">Help</p>
+                </div>
+                <div class = "inside-grid-1-5">
+                    <p class="menu">Tours</p>
+                </div>
+                <div class = "inside-grid-1-6">
+                </div>
+                
+                <div class = "inside-grid-1-7">
+                </div>
+                
+                <div class = "inside-grid-1-8">
+                    <p class="menu">@username</p>
+                </div>
+                
+                <div class = "inside-grid-1-9">
+                    <p class="menu">Logout</p>
+                </div>
+            </div>
+            <div class = "grid-item-2">
+                <p class="sidebar">AKIRA</p>
+                <p class="link"><i class="fas fa-home" style="color: black; margin-right: 5px;"></i>Dashboard</p>
+                <p class="link"><i class="fas fa-video" style="color: black; margin-right: 5px;"></i>Projects</p>
+                <p class="link"><i class="fas fa-thumbtack" style="color: black; margin-right: 5px;"></i>Tasks</p>
+                <p class="link"><i class="fas fa-envelope" style="color: black; margin-right: 5px;"></i>Messages</p>
+                <p class="link"><i class="fas fa-file" style="color: black; margin-right: 5px;"></i>Files</p>
+                <p class="link"><i class="far fa-calendar-alt" style="color: black; margin-right: 5px;"></i>Activity</p>
+                <p class="sidebar">YOUR ACCOUNT</p>
+                <p class="link"><i class="fas fa-user" style="color: black; margin-right: 5px;"></i>Profile</p>
+                <p class="link"><i class="fas fa-cog" style="color: black; margin-right: 5px;"></i>Settings</p>
+                <p class="link"><i class="fas fa-info-circle" style="color: black; margin-right: 5px;"></i>Help</p>
+                <p class="sidebar">BONUS TEMPLATES</p>
+                <p class="link"><i class="fas fa-image" style="color: black; margin-right: 5px;"></i>Gallery</p>
+                <p class="link"><i class="fas fa-square" style="color: black; margin-right: 5px;"></i>Blank State</p>
+            </div>
+            <div class = "grid-item-3">
+                <div class = "welcome">
+                    <h1 style="font-size: 32pt; margin-bottom: 0">Welcome!</h1>
+                    <p style="margin-top: 15px;">To get the most out of Akira start with our 3 minute tour</p>
+                    <button class="botao">Start Tour</button>
+                    <button class="botao" style="background-color: gray; border: none">No Thanks</button>
+                </div>
+                <div class="projetos">
+                    <div class="proj"><p><span style="font-weight: bold; font-size: 18pt">3</span><br>PROJECTS</p></div>
+                    <div class="task"><p><span style="font-weight: bold; font-size: 18pt">27</span><br>TASKS</p></div>
+                    <div class="message"><p><span style="font-weight: bold; font-size: 18pt">7</span><br>MESSAGES</p></div>
+                    <div class="files"><p><span style="font-weight: bold; font-size: 18pt">5</span><br>FILES</p></div>
+                </div>
+                <div class="recent">
+                    <h2>Recent Activity</h2>
+                    <table>
+                        <tr>
+                            <th>Project</th>
+                            <th>Client</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>View</th>
+                        </tr>
+                        <tr>
+                            <td>Nike com Redesign</td>
+                            <td>Monsters Inc</td>
+                            <td>New Task</td>
+                            <td>4 days ago</td>
+                            <td><a href="">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Nike com Redesign</td>
+                            <td>Monsters Inc</td>
+                            <td>New Message</td>
+                            <td>5 days ago</td>
+                            <td><a href="">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Nike com Redesign</td>
+                            <td>Monsters Inc</td>
+                            <td>New Project</td>
+                            <td>5 days ago</td>
+                            <td><a href="">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Twitter Server Consulting</td>
+                            <td>Bad Robot</td>
+                            <td>New Task</td>
+                            <td>6 days ago</td>
+                            <td><a href="">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Childrens Book Illustration</td>
+                            <td>Evil Genius</td>
+                            <td>New Message</td>
+                            <td>9 days ago</td>
+                            <td><a href="">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Twitter Server Consulting</td>
+                            <td>Bad Robot</td>
+                            <td>New Task</td>
+                            <td>16 days ago</td>
+                            <td><a href="">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

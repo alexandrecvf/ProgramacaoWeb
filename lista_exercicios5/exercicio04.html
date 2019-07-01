@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 4</title>
+	<meta charset="utf-8">
+
+	<style>
+		.principal{
+			margin: 0 auto;
+			padding: 20px;
+			padding-top: 10px;
+			width: 330px;		}
+		.botao{
+			background-color: #418CCB;
+			width:75px;
+			height:40px;
+			font-size: 15px;
+			color: white;
+			border-radius: 10px;
+		}
+		.botaoCancel{
+			background-color: white;
+			width:90px;
+			height:40px;
+			font-size: 15px;
+			color: black;
+			border-radius: 10px;
+		}
+		.campos{
+			height: 30px;
+			font-family: arial;
+			font-size: 16px;
+		}
+		.campoArea{
+			font-family: arial;
+			font-size: 16px;
+		}
+		.titulo{
+			border-bottom: 1px solid;
+			margin-bottom: -20px;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="destino.php" method="POST/GET">
+		<div class="principal">
+			<div class="titulo"><h2>Address Details</h2></div><br><br>
+			<label for="address1">Line 1 <input type="text" size="35" id="address1" name="address1" placeholder="Address Line 1" class="campos"></label> <br><br>
+			<label for="address2">Line 2 <input type="text" size="35" id="address2" name="address2" placeholder="Address Line 2" class="campos"></label> <br><br>
+			<label for="city">City &nbsp;&nbsp;&nbsp; <input type="text" size="35" id="city" name="city" placeholder="City" class="campos"></label> <br><br>
+			<label for="estate">Estate &nbsp;<input type="text" size="10" id="estate" name="estate" placeholder="Estate" class="campos"></label>
+			<label for="postcode"> Postcode &nbsp;<input type="text" size="10" id="postcode" name="postcode" placeholder="Post Code" class="campos"></label> <br><br>
+			<label for="country">Country <input type="text" size="33" id="country" name="country" placeholder="Country" class="campos"></label> <br><br>
+			<input type="submit" name="cancelar" value="Cancel" class="botaoCancel">
+			<input type="submit" name="enviar" value="Save" class="botao">
+		</div>
+	</form>
+</body>
+</html>

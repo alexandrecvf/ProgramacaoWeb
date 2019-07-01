@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 1</title>
+	<meta charset="utf-8">
+
+	<style>
+		div{
+			margin: 0 auto;
+			padding: 20px;
+			padding-top: 10px;
+			background-color: #00ABB5;
+			width: 330px;
+			text-align: center;
+		}
+		h2,label{
+			color: #FFFFFF;
+			text-align: center;
+		}
+		textarea{
+			resize: none;
+		}
+		.botao{
+			background-color: white;
+			width:150px;
+			height:40px;
+			font-size: 15px;
+			color: gray;
+		}
+		.campos{
+			height: 30px;
+			font-family: arial;
+			font-size: 16px;
+		}
+		.campoArea{
+			font-family: arial;
+			font-size: 16px;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="respostas.php" method="POST">
+		<div>
+			<h2>Contact Form</h2>
+			<input type="text" size="41" id="nome" name="nome" placeholder="Name" class="campos"> <br><br>
+			<input type="text" size="41" id="email" name="email" placeholder="Email" class="campos"> <br><br>
+			<textarea name="mensagem" rows="4" cols="39" placeholder="Message" class="campoArea"></textarea><br><br>
+			<label><input type="checkbox" name="copyEmail" id="copyEmail"> Send a copy to my email address</label>
+			<br><br>
+			<input type="submit" name="enviar" value="SEND" class="botao">
+		</div>
+	</form>
+</body>
+</html>

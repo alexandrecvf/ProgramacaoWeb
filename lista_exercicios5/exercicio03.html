@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 3</title>
+	<meta charset="utf-8">
+
+	<style>
+		div{
+			border: 2px solid;
+			border-color: #00822D;
+			background-color: #F9F9F9;
+			margin: 0 auto;
+			padding: 20px;
+			padding-top: 10px;
+			width: 330px;
+		}
+		textarea{
+			resize: none;
+		}
+		.botao{
+			background-color: #00B241;
+			width:330px;
+			height:40px;
+			font-size: 15px;
+			color: white;
+		}
+		.campos{
+			height: 30px;
+			font-family: arial;
+			font-size: 16px;
+		}
+		.campoArea{
+			font-family: arial;
+			font-size: 16px;
+		}
+		h1,p{
+			color: gray;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="destino.php" method="POST/GET">
+		<div>
+			<h1>Colorlib Contact Form</h1>
+			<p><b>Contact us for custom quote</b></p>
+			<input type="text" size="41" id="nome" name="nome" placeholder="Your Name" class="campos"> <br><br>
+			<input type="text" size="41" id="email" name="email" placeholder="Your Email Address" class="campos"> <br><br>
+			<input type="text" size="41" id="phone" name="phone" placeholder="Your Phone Number" class="campos"> <br><br>
+			<input type="text" size="41" id="website" name="website" placeholder="Your Web Site" class="campos"> <br><br>
+			<textarea name="mensagem" rows="4" cols="39" placeholder="Type your message here..." class="campoArea"></textarea><br>
+			<br><br>
+			<input type="submit" name="enviar" value="Submit" class="botao">
+		</div>
+	</form>
+</body>
+</html>

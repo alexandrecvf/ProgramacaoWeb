@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-family: Arial;
+            }
+            p{
+                font-weight: bold;
+            }
+            input{
+                height: 25px;
+                margin-left: 20px;
+                padding-left: 10px;
+            }
+            #botao{
+                background-color: white;
+                height: 30px;
+                width: 70px;
+            }
+            #botao2{
+                background-color: royalblue;
+                color: white;
+                height: 30px;
+                width: 65px; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Address Details</h1>
+        <form action="lista06-ex1-4.php" method="post">
+            <p>Line 1
+                <input class="texto" type="text" name="line1" size="43" placeholder="Adress Line 1">
+            </p>
+            <p>Line 2
+                <input class="texto" type="text" name="line2" size="43" placeholder="Adress Line 2">
+            </p>
+            <p>State
+                <input class="texto" type="text" name="state" size="10" placeholder="State" style="margin-left: 27px;">
+                <span style="margin-left: 30px;">Postcode</span>
+                <input class="texto" type="text" name="postcode" size="10" placeholder="Post Code" style="margin-left: 7px;">
+            </p>
+            <p>Country
+                <input class="texto" type="text" name="country" size="43" placeholder="Country" style="margin-left: 5px;">
+            </p>
+            <p>
+                <input id="botao" type="submit" name="cancel" value="Cancel" style="margin-left: 273px;">
+                <input id="botao2" type="submit" name="save" value="Save" style="margin-left: 1px;">
+            </p>
+        </form>
+    </body>
+</html>

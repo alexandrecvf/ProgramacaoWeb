@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista 12 - Número 5</title>
+	<meta charset="utf-8">
+    <script src="myscript.js"></script>
+	<style>
+        div{
+            margin: 100px 500px;
+            background-image: url(cracha.png);
+            width: 300px; 
+            height: 440px;
+            text-align: center;
+        }
+        p#logo{
+            display: block;
+            padding-top: 50px;
+        }
+        span#cxlogo{
+            display: none;
+        }
+        p#nomeEmp{
+            display: block;
+            padding-top: 10px;
+        }
+        span#cxnomeEmp{
+            display: none;
+        }
+        p#nome{
+            display: block;
+            padding-top: 200px;
+        }
+        span#cxnome{
+            display: none;
+        }
+        p#funcao{
+            display: block;
+            padding-top: 10px;
+        }
+        span#cxfuncao{
+            display: none;
+        }
+	</style>
+</head>
+<body>
+	<div id="fundoCracha">
+        <p id="logo">
+            <span id="txtlogo">Sua Logo</span>
+        </p>
+        <p id="nomeEmp">
+            <span id="txtnomeEmp" onclick="alterar('txtnomeEmp','cxnomeEmp','inpnomeEmp')">Nome da empresa</span>
+            <span id="cxnomeEmp">
+                <input type="text" id="inpnomeEmp" value="">
+                <button id="btlogo" onclick="atualizar('txtnomeEmp','cxnomeEmp','inpnomeEmp')">Atualizar</button>
+            </span>
+        </p>
+        <p id="nome">
+            <span id="txtnome" onclick="alterar('txtnome','cxnome','inpnome')">Nome</span>
+            <span id="cxnome">
+                <input type="text" id="inpnome" value="">
+                <button id="btlogo" onclick="atualizar('txtnome','cxnome','inpnome')">Atualizar</button>
+            </span>
+        </p>
+        <p id="funcao">
+            <span id="txtfuncao" onclick="alterar('txtfuncao','cxfuncao','inpfuncao')">Função</span>
+            <span id="cxfuncao">
+                <input type="text" id="inpfuncao" value="">
+                <button id="btlogo" onclick="atualizar('txtfuncao','cxfuncao','inpfuncao')">Atualizar</button>
+            </span>
+        </p>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.linha1{
+			grid-column-end: span 15;
+		}
+		.linha2{
+			grid-column-end: span 12;
+		}
+		.linha3{
+			grid-column-end: span 20;
+		}
+		.container{
+			display: grid;
+			grid-template-columns: repeat(60,auto);
+			grid-template-rows: repeat(3,auto);
+			grid-gap: 5px;
+			padding: 10px;
+		}
+		.container > div{
+			background-color: green;
+			text-align: center;
+			font-size: 30px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class = "container">
+		<div class="linha1"> <img src="img/paul1.jpg" width="100%" > </div>
+		<div class="linha1"> <img src="img/paul2.jpg" width="100%" > </div>
+		<div class="linha1"> <img src="img/paul3.jpg" width="100%" > </div>
+		<div class="linha1"> <img src="img/paul13.jpg" width="100%" > </div>
+		<div class="linha2"> <img src="img/paul5.jpg" width="100%" > </div>
+		<div class="linha2"> <img src="img/paul6.jpg" width="100%" > </div>
+		<div class="linha2"> <img src="img/paul7.jpg" width="100%" > </div>
+		<div class="linha2"> <img src="img/paul8.jpg" width="100%" > </div>
+		<div class="linha2"> <img src="img/paul9.jpg" width="100%" > </div>
+		<div class="linha3"> <img src="img/paul10.jpg" width="100%" > </div>
+		<div class="linha3"> <img src="img/paul11.jpg" width="100%" > </div>
+		<div class="linha3"> <img src="img/paul12.jpg" width="100%" > </div>
+	</div>
+</body>
+</html>

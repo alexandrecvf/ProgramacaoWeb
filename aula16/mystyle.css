@@ -1,0 +1,16 @@
+/*mystyle.css*/
+div#results {
+    width: 60%;
+    background-color: yellow;
+    margin: 0 auto;
+    height: 100px;
+}
+div#container {
+    width: 60%;
+    background-color: azure;
+    margin: 0 auto;
+    text-align: center;
+}
+ul{
+    text-align: left;
+}

@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+.animation{
+	margin: 0 auto;
+	height: 100vh;
+	background-color: #6ba2fa;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+#btnCreate{
+	top: 45%;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #d2d5d8;
+}
+
+#btnHook{
+	top: 45%;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #d2d5d8;
+
+}
+
+#logo{
+	width: 550px;
+}

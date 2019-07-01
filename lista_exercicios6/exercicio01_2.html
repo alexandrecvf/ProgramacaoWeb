@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style>
+            div{
+                background-color: rebeccapurple;
+                margin: 0 auto;
+                width: 400px;
+                height: 500px;
+                font-family: Arial;
+                text-align: center;
+                padding-top: 5px;
+            }
+            .texto {
+                padding-left: 10px;
+                height: 30px;
+                
+            }
+            
+            input {
+                font-family: Arial, "Font Awesome 5 Free";
+            }
+            textarea{
+                padding-left: 10px;
+                font-family: Arial, "Font Awesome 5 Free";
+            }
+            .topo{
+                width: 98%;
+                height: 120px;
+                background: url(building.jpg);
+                text-align: center;
+            }
+            .meio{
+                height: 365px;
+                width: 98%;
+                background-color: white;
+            }
+            #botao{
+                background-color: rebeccapurple;
+                color: white;
+                border-radius: 50px;
+                height: 35px;
+                width: 150px;
+                font-size: 8pt;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="topo">
+                <h2 style="color: white; padding-top: 30px;">CONTACT US</h2>
+            </div>
+            <div class="meio">
+                <form action="lista06-ex1-2.php" method="post">
+                    <p><input class="texto" type="text" name="nome" size="40" placeholder="&#xf007; Full name"></p>
+                    <p><input class="texto" type="email" name="email" placeholder="&#xf0e0; Eg.example@email.com" size="40"></p>
+                    <p><input class="texto" type="text" name="telefone" placeholder="&#xf2b9; Eg. +1 800 000000" size="40"></p>
+                    <p><textarea name="mensagem" rows="8" cols="42" placeholder="&#xf075; Message"></textarea></p>
+                    <input id="botao" type="submit" name="enviar" value="SEND NOW">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

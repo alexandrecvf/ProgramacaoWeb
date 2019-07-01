@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 13</title>
+	<meta charset="utf-8">
+	<script src="myscript.js"></script>
+	<style>
+		div{
+			background-color: beige;
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		p#p1{
+			display: block;/*block é o default (exibido)
+			none (ocultar)*/
+		}
+		span#cx1{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1"><span id="txt1" onclick="alterar()">Aqui vai um parágrafo</span>
+			<span id="cx1">
+				<input type="text" id="inp2" value="">
+				<button id="bt2" onclick="atualizar()">OK</button>
+			</span>
+		</p>
+		<p id="p2">Aqui vai outro parágrafo</p>
+		<p id="p3" onclick="esconderMostrar('p1')">Esconder | Mostrar</p>
+		<p id="p4">
+			<input type="text" id="inp1" value="">
+			<button id="bt1" onclick="addP()">OK</button>
+		</p>
+	</div>
+</body>
+</html>
